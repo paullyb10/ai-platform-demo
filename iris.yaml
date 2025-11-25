@@ -3,10 +3,10 @@ kind: "InferenceService"
 metadata:
   name: "sklearn-iris"
     annotations:
-    autoscaling.knative.dev/target: "1" 
+      autoscaling.knative.dev/target: "1" 
 spec:
   predictor:
-    # minReplicas: 0
+    minReplicas: 0
     model:
       modelFormat:
         name: sklearn
