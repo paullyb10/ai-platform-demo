@@ -2,8 +2,8 @@ apiVersion: "serving.kserve.io/v1beta1"
 kind: "InferenceService"
 metadata:
   name: "sklearn-iris"
-    # annotations:
-    # autoscaling.knative.dev/target: "1"
+    annotations:
+    autoscaling.knative.dev/target: "1" 
 spec:
   predictor:
     # minReplicas: 0
